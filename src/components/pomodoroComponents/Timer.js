@@ -5,6 +5,7 @@ import Reset from './Reset';
 import StartStop from './StartStop';
 import { switchBreak, switchSession, decSeconds } from '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators';
 
+
 const Timer = ({ timerRunning, secondsLeft, interval, switchBreak, switchSession, decSeconds }) => {
 
     let minutes = Math.floor(secondsLeft / 60);

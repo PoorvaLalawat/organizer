@@ -10,6 +10,7 @@ import BreakTime from './components/pomodoroComponents/BreakTime';
 import SessionTime from './components/pomodoroComponents/SessionTime';
 import Timer from './components/pomodoroComponents/Timer';
 
+
 function App() {
   return (
     <div className='App-container'>
@@ -17,7 +18,7 @@ function App() {
 
       {/* for todo list */}
         <div className='main-one'>
-    <Container maxW="container.sm">
+       <Container maxW="container.sm">
       <Heading my="4"> Todo List</Heading>
       <AddTodo/>
       <TodoList/>
@@ -27,12 +28,11 @@ function App() {
 
 {/* FOR POMODORO */}
      <div className='main-two'>
-    <h1 style={{color: 'greenyellow', fontSize:'1.5rem'}}>Pomodoro</h1>
-    <small>Be productive</small>
+    <Heading my="4"> Pomodoro</Heading>
+    <span>Be productive!!</span>
     <Timer />
     <div className='set-time-container'>
-        <SessionTime />
-       
+        <SessionTime /> 
         <BreakTime />
     </div>
     </div> 

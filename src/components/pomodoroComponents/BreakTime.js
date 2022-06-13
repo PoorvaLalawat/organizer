@@ -18,7 +18,7 @@ const BreakTime = ({ timerRunning, breakLength, incBreak, decBreak}) => {
                 </button>
                 
                 <h3
-                    className='button-child'
+                    // className='button-child'
                     id='break-length'
                 >
                 {breakLength}
@@ -29,7 +29,7 @@ const BreakTime = ({ timerRunning, breakLength, incBreak, decBreak}) => {
                     id='break-decrement'
                     onClick={timerRunning === false && breakLength > 1 ? decBreak : null}
                 >
-                -
+                - 
                 </button>
             </div>
         </div>

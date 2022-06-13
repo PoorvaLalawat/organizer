@@ -25,5 +25,5 @@ html,body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: rgb(94, 155, 255);
+  /* background: rgb(94, 155, 255); */
 }

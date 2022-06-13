@@ -28,6 +28,7 @@ const pomoReducer = (state = initialState, action) => {
                 ...state,
                 breakLength: state.breakLength + 1,
             }
+
         case DEC_BREAK:
             console.log('-')
             return {

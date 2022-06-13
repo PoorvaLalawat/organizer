@@ -18,7 +18,7 @@ const SessionTime = ({ timerRunning, sessionLength, incSession, decSession}) => 
                 </button>
                 
                 <h3
-                    className='button-child'
+                    // className='button-child'
                     id='session-length'
                 >
                 {sessionLength}
