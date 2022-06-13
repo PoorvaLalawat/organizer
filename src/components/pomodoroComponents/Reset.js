@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 // import { resetTimer } from '../actions/actCreators';
-import { resetTimer } from  '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators';
-
+//import { resetTimer } from  '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators';
+import { resetTimer } from '../../actions/actCreators';
 const Reset = ({ resetTimer }) => {
     return (
         <div className='reset-container'>

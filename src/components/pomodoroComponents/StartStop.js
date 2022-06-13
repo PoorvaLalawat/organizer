@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { startTimer, stopTimer } from '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators';
+//import { startTimer, stopTimer } from '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators';
+import {startTimer,stopTimer} from '../../actions/actCreators';
 
 const StartStop = ({ timerRunning, startTimer, stopTimer }) => {
     return (

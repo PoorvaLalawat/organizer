@@ -2,7 +2,8 @@ import React from 'react';
 import './BreakTime.css';
 import { connect } from 'react-redux';
 // import { incBreak, decBreak } from '.../'
-import {incBreak,decBreak} from '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators'
+// import {incBreak,decBreak} from '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators'
+import {incBreak,decBreak} from '../../actions/actCreators';
 
 const BreakTime = ({ timerRunning, breakLength, incBreak, decBreak}) => {    
     return (

@@ -1,11 +1,12 @@
 import { combineReducers } from "redux";
 import todos from "./todos";
 import visibilityFilter from "./visibilityFilter";
-import pomoReducer from "./pomoReducer";
+import pomoReducer from './pomoReducer';
 
 
-export default combineReducers({
+const rootReducer=combineReducers({
     todos,
     visibilityFilter,
     pomoReducer,
 });
+export default rootReducer;

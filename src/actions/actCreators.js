@@ -49,3 +49,4 @@ export const switchSession = () => ({
 export const decSeconds = () => ({
         type: DEC_SECONDS
     })
+    

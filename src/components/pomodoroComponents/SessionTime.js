@@ -1,8 +1,8 @@
 import React from 'react';
 import './SessionTime.css';
 import { connect } from 'react-redux';
-import { incSession, decSession } from '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators';
-
+//import { incSession, decSession } from '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators';
+import { incSession,decSession } from '../../actions/actCreators';
 
 const SessionTime = ({ timerRunning, sessionLength, incSession, decSession}) => {
     return (

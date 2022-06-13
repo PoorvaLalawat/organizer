@@ -3,8 +3,7 @@ import './Timer.css';
 import { connect } from 'react-redux';
 import Reset from './Reset';
 import StartStop from './StartStop';
-import { switchBreak, switchSession, decSeconds } from '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators';
-
+import {switchBreak,switchSession,decSeconds } from '../../actions/actCreators';
 
 const Timer = ({ timerRunning, secondsLeft, interval, switchBreak, switchSession, decSeconds }) => {
 

@@ -11,10 +11,10 @@ import SessionTime from './components/pomodoroComponents/SessionTime';
 import Timer from './components/pomodoroComponents/Timer';
 
 
+
 function App() {
   return (
     <div className='App-container'>
-
 
       {/* for todo list */}
         <div className='main-one'>
@@ -32,6 +32,7 @@ function App() {
     <span>Be productive!!</span>
     <Timer />
     <div className='set-time-container'>
+    
         <SessionTime /> 
         <BreakTime />
     </div>
