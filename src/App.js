@@ -30,11 +30,13 @@ function App() {
      <div className='main-two'>
     <Heading my="4"> Pomodoro</Heading>
     <span>Be productive!!</span>
-    <Timer />
-    <div className='set-time-container'>
     
+    <div className='set-time-container'>
+         <Timer />
+         <div>
         <SessionTime /> 
         <BreakTime />
+        </div>
     </div>
     </div> 
 
