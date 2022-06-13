@@ -1,11 +1,13 @@
 import React from 'react';
 import './BreakTime.css';
-import { connect } from 'react-redux';
-// import { incBreak, decBreak } from '.../'
-// import {incBreak,decBreak} from '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators'
 import {incBreak,decBreak} from '../../actions/actCreators';
+import { useSelector, useDispatch } from "react-redux";
 
-const BreakTime = ({ timerRunning, breakLength, incBreak, decBreak}) => {    
+const BreakTime = () => {    
+    const { timerRunning, breakLength} = useSelector(state => state.pomoReducer);
+    const dispatch = useDispatch();
+    const _incBreak = () => dispatch(incBreak());
+    const _decBreak = () => dispatch(decBreak());
     return (
         <div className='breaktime-container'>
             <h2 id='break-label'>Break Length</h2>
@@ -13,13 +15,12 @@ const BreakTime = ({ timerRunning, breakLength, incBreak, decBreak}) => {
                 <button
                     className='button-child'
                     id='break-increment'
-                    onClick={timerRunning === false && breakLength < 60 ? incBreak : null}
+                    onClick={timerRunning === false && breakLength < 60 ? _incBreak : null}
                 >
                 +
                 </button>
                 
                 <h3
-                    // className='button-child'
                     id='break-length'
                 >
                 {breakLength}
@@ -28,7 +29,7 @@ const BreakTime = ({ timerRunning, breakLength, incBreak, decBreak}) => {
                 <button
                     className='button-child'
                     id='break-decrement'
-                    onClick={timerRunning === false && breakLength > 1 ? decBreak : null}
+                    onClick={timerRunning === false && breakLength > 1 ? _decBreak : null}
                 >
                 - 
                 </button>
@@ -37,14 +38,4 @@ const BreakTime = ({ timerRunning, breakLength, incBreak, decBreak}) => {
     )
 }
 
-const mapStateToProps = ({ breakLength, timerRunning }) => ({
-    breakLength,
-    timerRunning
-})
-
-const mapDispatchToProps = {
-    incBreak,
-    decBreak,
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(BreakTime)
+export default BreakTime;

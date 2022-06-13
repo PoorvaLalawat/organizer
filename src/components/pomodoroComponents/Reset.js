@@ -1,15 +1,17 @@
 import React from 'react';
-import { connect } from 'react-redux';
-// import { resetTimer } from '../actions/actCreators';
-//import { resetTimer } from  '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators';
 import { resetTimer } from '../../actions/actCreators';
-const Reset = ({ resetTimer }) => {
+import { useDispatch } from 'react-redux';
+const Reset = (
+    // { resetTimer }
+    ) => {
+    const dispatch = useDispatch();
+    const _resetTimer = () => dispatch(resetTimer())
     return (
         <div className='reset-container'>
             <button
                 className='button-child'
                 id='reset'
-                onClick={resetTimer}
+                onClick={_resetTimer}
                 >
                 Reset
             </button>
@@ -17,8 +19,4 @@ const Reset = ({ resetTimer }) => {
     )
 }
 
-const mapDispatchToProps = {
-    resetTimer
-}
-
-export default connect(null, mapDispatchToProps)(Reset)
+export default Reset;

@@ -1,15 +1,18 @@
 import React from 'react';
-import { connect } from 'react-redux';
-//import { startTimer, stopTimer } from '/Users/sanjeevanibhandari/Desktop/organizer-main/src/actions/actCreators';
 import {startTimer,stopTimer} from '../../actions/actCreators';
+import { useSelector, useDispatch } from "react-redux";
 
-const StartStop = ({ timerRunning, startTimer, stopTimer }) => {
+const StartStop = () => {
+    const dispatch = useDispatch();
+    const { timerRunning} = useSelector(state => state.pomoReducer);
+    const _startTimer = () => dispatch(startTimer());
+    const _stopTimer = () => dispatch(stopTimer());
     return (
         <div className='start-stop-container'>
             <button
                 className='button-child'
                 id='start-stop'
-                onClick={timerRunning ? stopTimer : startTimer}
+                onClick={timerRunning ? _stopTimer : _startTimer}
                 >
                 Start/Stop
             </button>
@@ -17,13 +20,4 @@ const StartStop = ({ timerRunning, startTimer, stopTimer }) => {
     )
 }
 
-const mapStateToProps = ({ timerRunning }) => {
-    return {timerRunning};
-}
-
-const mapDispatchToProps = {
-    startTimer,
-    stopTimer
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(StartStop)
+export default StartStop

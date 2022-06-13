@@ -10,3 +10,9 @@ const rootReducer=combineReducers({
     pomoReducer,
 });
 export default rootReducer;
+
+// export default combineReducers({
+//     todos,
+//     visibilityFilter,
+//     pomoReducer,
+// });
