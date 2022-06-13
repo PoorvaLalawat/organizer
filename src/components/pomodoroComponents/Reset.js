@@ -1,5 +1,5 @@
 import React from 'react';
-import { resetTimer } from '../../actions/actCreators';
+import { resetTimer } from '../../redux/actions/actCreators';
 import { useDispatch } from 'react-redux';
 const Reset = (
     // { resetTimer }

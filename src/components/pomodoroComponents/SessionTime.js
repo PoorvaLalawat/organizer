@@ -1,6 +1,6 @@
 import React from 'react';
 import './SessionTime.css';
-import { incSession,decSession } from '../../actions/actCreators';
+import { incSession,decSession } from '../../redux/actions/actCreators';
 import { useSelector, useDispatch } from "react-redux"; 
 
 const SessionTime = ()=> {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './BreakTime.css';
-import {incBreak,decBreak} from '../../actions/actCreators';
+import {incBreak,decBreak} from '../../redux/actions/actCreators';
 import { useSelector, useDispatch } from "react-redux";
 
 const BreakTime = () => {    

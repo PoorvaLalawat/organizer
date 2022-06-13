@@ -1,5 +1,5 @@
 import React from 'react';
-import {startTimer,stopTimer} from '../../actions/actCreators';
+import {startTimer,stopTimer} from '../../redux/actions/actCreators';
 import { useSelector, useDispatch } from "react-redux";
 
 const StartStop = () => {

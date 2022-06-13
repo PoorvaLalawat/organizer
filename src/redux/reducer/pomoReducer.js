@@ -9,7 +9,7 @@ import {
     SWITCH_BREAK,
     SWITCH_SESSION,
     DEC_SECONDS
-} from '../../actions/actCreators';
+} from '../actions/actCreators';
 
 const initialState = {
     breakLength: 5,

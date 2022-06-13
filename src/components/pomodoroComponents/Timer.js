@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Timer.css';
 import Reset from './Reset';
 import StartStop from './StartStop';
-import {switchBreak,switchSession,decSeconds } from '../../actions/actCreators';
+import {switchBreak,switchSession,decSeconds } from '../../redux/actions/actCreators';
 import { useSelector, useDispatch } from "react-redux";
 
 const Timer = () => {
