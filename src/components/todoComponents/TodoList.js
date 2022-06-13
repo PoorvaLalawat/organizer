@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react"
 import { useSelector } from "react-redux";
-import { getTodosByVisibilityFilter } from "../redux/selector";
+import { getTodosByVisibilityFilter } from "../../redux/selector";
 import { Todo } from "./Todo";
 
 export const TodoList = () => {
