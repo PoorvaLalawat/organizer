@@ -1,4 +1,4 @@
-import { ADD_TODO, TOGGLE_TODO, SET_FILTER, DELETE_TODO } from './actiontypes';
+import { ADD_TODO, TOGGLE_TODO, SET_FILTER } from '../actions/actiontypes';
 
 let nextTodoId = 0;
 export const addTodo = content => ({

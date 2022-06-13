@@ -1,4 +1,4 @@
-import { VISIBILITY_FILTER } from "../constants.js"
+import { VISIBILITY_FILTER } from "../../constants";
 
 export const getTodosByVisibilityFilter = (store, visibilityFiler) => {
   switch(visibilityFiler) {
